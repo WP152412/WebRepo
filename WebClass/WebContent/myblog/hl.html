@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>HyperLink</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    
+    <script src="../js/stMenuSelect.js"> </script>
+    <link rel="stylesheet" type="text/css" href="../css/seContainer.css" media="screen" />
+    
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <a class="navbar-brand" href="home.html">Nice Blog</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
+	        <a class="nav-link" href="info.html">My Info</a>
+	      </li>
+	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
+	        <a class="nav-link" href="hobby.html">My Hobby</a>
+	      </li>
+	      
+	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
+	        <a class="nav-link" href="hl.html">Hyperlink</a>
+	      </li>
+	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
+	        <a class="nav-link" href="signUp.html">Sign Up</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0" id="loginForm">
+	      <input class="form-control mr-sm-2" type="text" placeholder="ID" aria-label="ID" id="id" required>
+	      <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password" id="password" required>
+	      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
+	    </form>
+	  </div>
+	</nav>
+	
+	
+	 <div class="container">
+	    <h1>HyperLink</h1><br>
+	    
+	    In computing, a hyperlink, or simply a link, is a reference to data that the reader can directly follow either by clicking, tapping, or hovering.[1] A hyperlink points to a whole document or to a specific element within a document. Hypertext is text with hyperlinks. The text that is linked from is called anchor text. A software system that is used for viewing and creating hypertext is a hypertext system, and to create a hyperlink is to hyperlink (or simply to link). A user following hyperlinks is said to navigate or browse the hypertext.
+		<br><br>
+		The document containing a hyperlink is known as its source document. For example, in an online reference work such as Wikipedia, many words and terms in the text are hyperlinked to definitions of those terms. Hyperlinks are often used to implement reference mechanisms such as tables of contents, footnotes, bibliographies, indexes, letters and glossaries.
+		<br><br>
+		In some hypertext hyperlinks can be bidirectional: they can be followed in two directions, so both ends act as anchors and as targets. More complex arrangements exist, such as many-to-many links.
+		<br><br>
+		The effect of following a hyperlink may vary with the hypertext system and may sometimes depend on the link itself; for instance, on the World Wide Web most hyperlinks cause the target document to replace the document being displayed, but some are marked to cause the target document to open in a new window. Another possibility is transclusion, for which the link target is a document fragment that replaces the link anchor within the source document. Not only persons browsing the document follow hyperlinks; they may also be followed automatically by programs. A program that traverses the hypertext, following each hyperlink and gathering all the retrieved documents is known as a Web spider or crawler.
+	    <br><br>
+	    [출처] 위키피디아
+	    <br><br>
+	    
+	    
+		<a href="http://www.google.com" target = "_blank">
+		<img src="../image/google.png" alt = "google" height = "50"> </a>　
+	    <a href="http://www.naver.com" target = "_blank">
+		<img src="../image/naver.png" alt = "naver" height = "50"> </a>　
+		<a href="http://www.daum.net" target = "_blank">
+		<img src="../image/daum.png"  alt="daum" height = "50"> </a>　　
+		<a href="http://www.dimigo.hs.kr" target = "_blank">
+		<img src="../image/dimigo.png" alt="dimigo" height = "50"> </a>　　
+    </div>
+    
+    <!-- Modal 창 -->
+    <div class="modal" id="myModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">로그인 결과</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <p></p>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  	<script src="../js/stLogin.js"> </script>
+	
+</body>
+
+</html>

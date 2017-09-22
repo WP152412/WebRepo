@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script>
+function checking() {
+	var nai = Number(document.getElementById("age").value);
+	if( 16 <= nai && nai <= 69 ) {
+		var kg = Number(document.getElementById("mooge").value);
+		console.log(kg);
+		if( document.getElementById("male").checked ) {
+			if( kg >= 50 ) document.getElementById("can").innerHTML = "헌혈 가능합니다";
+			else document.getElementById("can").innerHTML = "체중 미달";
+		}
+		else {
+			if( kg >= 45 ) document.getElementById("can").innerHTML = "헌혈 가능합니다";
+			else document.getElementById("can").innerHTML = "체중 미달";			
+		}	
+	}
+	else document.getElementById("can").innerHTML = "연령 부적합";
+}
+</script>
+</head>
+<body>
+	<h1>현혈 조건 체크</h1>
+	<br>
+	
+	<p> 나이: <input type="text" id="age"> 세</p>
+	<p> 성별: <input type="radio" name="gender" id="male" checked> 남자
+	<input type="radio" name="gender" id="female"> 여자 </p>
+	몸무게: <input type="text" id="mooge"> kg
+	<br><br>
+	<input type="button" id="check" value="현혈 조건 체크" onclick="checking();">
+	<p id="can" ></p>
+	
+</body>
+</html>

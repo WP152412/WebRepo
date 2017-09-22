@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<script>
+function sum() {
+	var sum = 0, n = document.getElementById("input").value;
+	for(var i=1; i<=n; i++) sum += i;
+	document.getElementById("result").innerHTML =
+		"1부터 " + n + "까지의 합은 " + sum + "입니다.";		
+}
+</script>
+</head>
+<body>
+	<input type="text" id="input" size="5"> 
+	<input type="button" value="계산" onclick="sum()">
+	<p id="result">
+</body>
+</html>
