@@ -30,7 +30,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title">Sign Up Error</h5>
+					<h5 class="modal-title">로그인 실패</h5>
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
@@ -69,7 +69,7 @@
 		 			} else {
 						var myModal = $('#myModal');
 		 				myModal.modal();
-						myModal.find('.modal-body').text('회원가입에 실패하였습니다.');
+						myModal.find('.modal-body').text('로그인에 실패하였습니다.');
 					}
 				}
 			);
