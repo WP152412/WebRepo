@@ -20,21 +20,7 @@
 	  </button>
 	
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-	        <a class="nav-link" href="info.html">My Info</a>
-	      </li>
-	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-	        <a class="nav-link" href="hobby.html">My Hobby</a>
-	      </li>
-	      
-	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-	        <a class="nav-link" href="hl.html">Hyperlink</a>
-	      </li>
-	      <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this);">
-	        <a class="nav-link" href="signUp.html">Sign Up</a>
-	      </li>
-	    </ul>
+	    <%@ include file="menu.jsp" %>
 	    <form class="form-inline my-2 my-lg-0" id="loginForm">
 	      <input class="form-control mr-sm-2" type="text" placeholder="ID" aria-label="ID" id="id" required>
 	      <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password" id="password" required>
@@ -45,28 +31,12 @@
 	 
 	 <div class="container">
 	    <h1>Welcome!</h1><br>
-	    <p>블로그에 방문한 것을 환영합니다.</p>
+	    <p>!!블로그에 방문하신 것을 환영합니다.</p>
     </div>
     
-    <!-- Modal 창 -->
-    <div class="modal" id="myModal">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title">로그인 결과</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	        <p></p>
-	      </div>
-	      <div class="modal-footer">
-	      	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+    <!-- Modal -->
+    <%@ include file= "modal.jsp" %>
+    <%@ include file= "footer.jsp" %>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
